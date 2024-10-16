@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #3e779a;
+    color: #010101;
+}
+
+header {
+    background-color: #010101;
+    color: #f8f2f2;
+    position: relative;
+}
+
+.header-img {
+    width: 100%;
+    height: auto;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #faf4f4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  h2 {
+    color: #f5f4f3; /* Cambia el color solo de los h2 dentro del header */
+    font-size: 2em; /* Puedes ajustar el tamaño si es necesario */
+}
+.box p {
+  color: #010101; /* Asegura que los párrafos dentro de las cajas no se vean afectados */
+}
+.personaje-item,
+.personaje-fila {
+  display: flex;
+  justify-content: space-between; /* Separar las cajas uniformemente */
+  gap: 20px; /* Espacio entre las cajas */
+  flex-wrap: nowrap; /* No permitir que las cajas salten a la siguiente línea */
+}
+
+/* Añadir margen superior a la segunda fila para separarla de la primera */
+.personaje-fila {
+  margin-top: 40px; /* Añadir separación entre la primera y segunda fila */
+}
+
+/* Estilo para las cajas */
+.personaje-box {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #c5d8f5;
+  padding: 20px;
+  flex: 1 1 300px; /* Ancho flexible pero limitado */
+  max-width: 300px; /* Limita el ancho de las cajas */
+  min-width: 200px; /* Asegura que las cajas no se hagan demasiado pequeñas */
+  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+  height: 400px; /* Asegura que todas las cajas tengan la misma altura */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.personaje-box img {
+  max-width: 100%;
+  max-height: 100%; /* Asegura que las imágenes se ajusten dentro del tamaño de la caja */
+  object-fit: cover; /* Recorta la imagen para ajustarse sin deformarse */
+}
+.personaje-descripcion {
+  text-align: left; /* Texto alineado a la izquierda */
+  font-size: 23px; /* Ajusta el tamaño del texto */
+  height: auto; /* Dejar que la altura se ajuste automáticamente según el contenido */
+  display: block; /* Elimina el uso de flex para el texto */
+}
+.personaje-descripcion p {
+  margin: 10px; /* Ajusta el espacio entre los párrafos */
+}
+
+.gallery-vertical {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .gallery-item p {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+  }
+  .gallery-item {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #91cad5;
+    padding: 10px;
+  }
+.historia-container {
+    display: flex;
+    gap: 20px; /* Espacio entre columnas */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .parrafo {
+    flex: 1;
+    padding: 10px;
+    margin-right: 20px; /* Espacio adicional entre columnas */
+  }
+  
+  .parrafo:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último párrafo */
+  }
+  .container {
+    display: flex;
+    justify-content: space-between; /* Alinear los boxes a las esquinas */
+    padding: 20px;
+}
+.box {
+    display: flex;
+    flex-direction: row; /* Alinear horizontalmente el contenido en cada box */
+    align-items: center;
+    width: 640px; /* Tamaño del box */
+    padding: 20px;
+    background-color: #b0b8f2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+/* Estilo del video */
+.box video {
+    max-width: 425px; /* Ajustar el tamaño del video */
+    border-radius: 10px;
+    margin-right: 20px; /* Separación entre video y contenido a la derecha */
+}
+.content {
+    display: flex;
+    flex-direction: column; /* Imagen y texto en columna */
+    align-items: center;
+}
+.box img {
+    width: 160px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.contactos-container {
+  display: flex;
+  gap: 20px;
+  background-color: #def1f7;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.contacto-item {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #b3eff6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  background-color: #9faafd;
+}
+
+.contacto-item h3 {
+  margin-bottom: 10px;
+}
+
+.contacto-item p {
+  margin: 5px 0;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.social-icons img {
+  width: 30px;
+  height: auto;
+  margin: 0 10px;
+}
+
